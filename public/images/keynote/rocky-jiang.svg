@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11141b"/><stop offset=".7" stop-color="#090a0d"/><stop offset="1" stop-color="#050506"/></linearGradient>
+  <radialGradient id="spot" cx="0.5" cy="0" r="1.1"><stop offset="0" stop-color="#c9d3ff" stop-opacity=".22"/><stop offset=".55" stop-color="#3b63ff" stop-opacity=".05"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2a6e"/><stop offset="1" stop-color="#0b1233"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3b63ff" stroke-opacity=".18" stroke-width="1"/></pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="1200" height="1500" fill="url(#bg)"/>
+<g filter="url(#blur)" opacity=".85">
+  <rect x="228" y="150" width="744" height="312.47999999999996" rx="6" fill="url(#screen)"/>
+  <rect x="228" y="150" width="744" height="312.47999999999996" rx="6" fill="url(#grid)"/>
+  <text x="272.64" y="343.7376" font-family="Georgia, serif" font-size="68.7456" fill="#e9ecff" opacity=".85">Zephyr Z1</text>
+  <path d="M637.2 306.24 l223.2 0" stroke="#e9ecff" stroke-width="6.249599999999999" opacity=".6"/>
+  <path d="M748.8 306.24 l-44.64 -43.7472 m44.64 43.7472 l-44.64 43.7472" stroke="#e9ecff" stroke-width="4.687199999999999" opacity=".6"/>
+</g>
+<rect y="1080" width="1200" height="420" fill="#060708"/>
+<rect width="1200" height="1500" fill="url(#spot)"/>
+<ellipse cx="600" cy="720" rx="46" ry="56" fill="#0a0b0e"/><rect x="582" y="760" width="36" height="50" fill="#0a0b0e"/><path d="M465 1450
+    L460 900
+    Q465 810 560 800
+    L640 800
+    Q735 810 740 900
+    L735 1450 Z" fill="#0a0b0e"/><path d="M720 860 L830 990 L870 850 L900 860 L855 1040 L805 1060 L710 950 Z" fill="#0a0b0e"/><path d="M460 900 Q465 810 560 800" stroke="#7d93ff" stroke-opacity=".35" stroke-width="3" fill="none"/>
+    <path d="M556 705 A 46 56 0 0 1 610 665" stroke="#7d93ff" stroke-opacity=".4" stroke-width="3" fill="none"/>
+<path d="M420 990 L780 990 L750 2490 L450 2490 Z" fill="#111317"/>
+  <rect x="410" y="976" width="380" height="18" fill="#1a1d23"/>
+  
+<g transform="translate(564 1060) scale(1.15)">
+  <path d="M32 2 L60 60 L48.5 60 L32 25.5 L15.5 60 L4 60 Z" fill="#d9d5cc"/>
+  <path d="M0 45 L32 35 L64 45 L64 49.5 L32 39.5 L0 49.5 Z" fill="#3b63ff"/>
+</g>
+<g font-family="'IBM Plex Mono', ui-monospace, monospace" fill="#f2efe8">
+  <rect x="48" y="60" width="348" height="44" fill="#3b63ff"/>
+  <text x="66" y="89" font-size="18" letter-spacing="3">TEMPLATE PHOTO</text>
+  <text x="48" y="1380" font-size="20.400000000000002" letter-spacing="2" opacity=".9">ROCKY JIANG — KEYNOTE</text>
+  <text x="48" y="1416" font-size="15.6" letter-spacing="1.5" opacity=".55">REPLACE → public/images/keynote/rocky-jiang.svg</text>
+</g>
+</svg>
