@@ -26,7 +26,7 @@ export const nav = [
 export const hero = {
   eyebrow: ['Albatross Defense', `Est. ${company.founded}`, company.hqShort],
   lines: ['Launch like a rocket.', 'Fly like an '],
-  accent: 'albatross.',
+  accent: 'Albatross.',
   sub: 'Albatross Defense is an American aerospace startup building rocket-launched, wing-deploying unmanned aircraft. Our first platform, Zephyr Z1, boosts to altitude, unfolds its wings and transitions to efficient electric flight.',
 }
 
@@ -99,7 +99,7 @@ export const launchEvent = {
   dateShort: '10.25.26',
   venue: 'Krimgold Park',
   city: 'Woodbine, MD',
-  photo: asset('images/keynote/event-wide.svg'),
+  photo: asset('images/keynote/event-wide.jpg'),
   photoAlt: 'The Albatross Defense founders delivering the Zephyr Z1 keynote',
 }
 
@@ -114,7 +114,7 @@ export const founders = {
       origin: 'Asheville, NC',
       bio: 'Sawyer grew up in Asheville, North Carolina, and attended Episcopal High School, where he met Henry and Rocky. He has always had a passion for engineering and for taking projects from an idea to something real — the instinct that drives how Albatross builds.',
       tags: ['Engineering', 'Prototyping', 'Product development'],
-      photo: asset('images/keynote/sawyer-locke.svg'),
+      photo: asset('images/keynote/sawyer-locke.jpg'),
     },
     {
       name: 'Henry De Roulet',
@@ -122,7 +122,7 @@ export const founders = {
       origin: 'New York, NY',
       bio: 'Henry is from New York and is a private pilot. He brings a pilot’s perspective to Albatross, alongside a lifelong passion for engineering, 3D modeling and aviation.',
       tags: ['Private pilot', 'Engineering', '3D modeling', 'Aviation'],
-      photo: asset('images/keynote/henry-de-roulet.svg'),
+      photo: asset('images/keynote/henry-de-roulet.jpg'),
     },
     {
       name: 'Rocky Jiang',
@@ -130,7 +130,7 @@ export const founders = {
       origin: 'Born in China',
       bio: 'Rocky was born in China and brings a passion for drones, FPV systems, aviation, graphic design and model building to Albatross — pairing hands-on flight experience with a designer’s eye.',
       tags: ['Drones', 'FPV systems', 'Aviation', 'Graphic design', 'Models'],
-      photo: asset('images/keynote/rocky-jiang.svg'),
+      photo: asset('images/keynote/rocky-jiang.jpg'),
     },
   ],
 }
