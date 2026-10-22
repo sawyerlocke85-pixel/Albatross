@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { imagetools } from 'vite-imagetools'
+import { updatesPlugin } from './scripts/vite-plugin-updates.mjs'
 
-// `base: './'` emits relative asset URLs, so the same build works on
-// GitHub Pages (username.github.io/Albatross/) and on a custom domain root.
+// BASE_PATH is set by the GitHub Pages workflow ("/Albatross/" on github.io,
+// "/" once a custom domain is configured). Local dev always uses "/".
 export default defineConfig({
-  base: './',
-  plugins: [react()],
+  base: process.env.BASE_PATH || '/',
+  plugins: [react(), imagetools(), updatesPlugin()],
 })
