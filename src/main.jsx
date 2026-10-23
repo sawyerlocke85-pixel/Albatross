@@ -1,17 +1,38 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@fontsource/instrument-serif/400.css'
-import '@fontsource/instrument-serif/400-italic.css'
-import '@fontsource-variable/inter-tight/wght.css'
-import '@fontsource/ibm-plex-mono/400.css'
-import '@fontsource/ibm-plex-mono/500.css'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import './styles/global.css'
-import App from './App'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import Products from './pages/Products'
+import Updates from './pages/Updates'
+import UpdatePage from './pages/UpdatePage'
+import Founders from './pages/Founders'
+import Mission from './pages/Mission'
+import Careers from './pages/Careers'
+import NotFound from './pages/NotFound'
 
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+const router = createBrowserRouter(
+  [
+    {
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'products', element: <Products /> },
+        { path: 'products/updates', element: <Updates /> },
+        { path: 'products/updates/:slug', element: <UpdatePage /> },
+        { path: 'founders', element: <Founders /> },
+        { path: 'mission', element: <Mission /> },
+        { path: 'careers', element: <Careers /> },
+        { path: '*', element: <NotFound /> },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/' },
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
