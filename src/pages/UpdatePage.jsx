@@ -19,7 +19,7 @@ export default function UpdatePage() {
       meta.content = previous
     }
   }, [post])
-  if (!post) return <NotFound />
+  if (!post) return <NotFound />/Users/johnsawyerlocke/Downloads/2026-11-07-wing-bay-cutaway.zip
   return (
     <section className="wrap" style={{ paddingTop: '3rem' }}>
       <p style={{ marginBottom: '2rem' }}>
